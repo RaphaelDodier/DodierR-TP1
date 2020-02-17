@@ -1,11 +1,23 @@
 header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     #checkMenu, #chkRecherche{
         display: none;
     }
+    #btnMenu{
+        z-index: 100;
+        color: white;
+        font-size: 2em;
+    }
+
     #menu{
+        top: 0;
+        position: fixed;
+        width: 100%;
         height: 100%;
         background-color: rgb(71, 44, 33);
         transform: translateX(-100%);

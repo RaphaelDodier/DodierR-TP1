@@ -39,35 +39,16 @@ body .global h2 {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 header #checkMenu, header #chkRecherche {
   display: none;
 }
 
-header #btnMenu {
-  z-index: 100;
-  color: white;
-  font-size: 2em;
-}
-
 header #menu {
-  top: 0;
-  position: fixed;
-  width: 100%;
   height: 100%;
   background-color: #472c21;
   -webkit-transform: translateX(-100%);
