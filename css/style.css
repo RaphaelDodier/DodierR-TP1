@@ -76,10 +76,6 @@ header #menu {
   background-color: #472c21;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: -webkit-transform 0.6s ease-out;
-  transition: -webkit-transform 0.6s ease-out;
-  transition: transform 0.6s ease-out;
-  transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,11 +112,51 @@ header ul li a {
 #checkMenu:checked ~ #menu {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
 }
 
 #checkMenu:checked ~ #btnMenu {
   color: orange;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media screen and (min-width: 500px) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    height: 40px;
+  }
+  header #btnMenu {
+    display: none;
+  }
+  header #menu {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+    background-color: rgba(0, 0, 0, 0);
+    position: static;
+  }
+  header #menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0;
+    background-color: rgba(10, 218, 10, 0);
+  }
+  header #menu ul li {
+    padding: 8px 10px;
+    margin: 0 5px;
+  }
+  header #menu ul li a {
+    font-size: 0.8em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
