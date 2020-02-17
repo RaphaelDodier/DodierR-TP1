@@ -57,18 +57,9 @@ header #menu {
   transition: -webkit-transform 0.6s ease-out;
   transition: transform 0.6s ease-out;
   transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
-}
-
-header ul {
-  background-color: black;
-  text-align: center;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -76,14 +67,20 @@ header ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header ul {
+  text-align: center;
+  width: 100%;
   list-style-type: none;
   padding: 0;
+  background-color: #0ada0a;
 }
 
 header ul li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0;
-          flex: 1 0;
+  padding: 30px 0;
+  margin: 5px 0;
+  background-color: #007b00;
 }
 
 header ul li a {
