@@ -38,12 +38,29 @@ body .global h2 {
   }
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
 header #checkMenu, header #chkRecherche {
   display: none;
 }
 
 header #menu {
+  height: 100%;
   background-color: #472c21;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
+}
+
+header ul {
+  background-color: black;
   text-align: center;
   width: 100%;
   display: -webkit-box;
@@ -59,15 +76,23 @@ header #menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-header #menu .global {
   list-style-type: none;
   padding: 0;
 }
 
-header #menu .global a {
+header ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+
+header ul li a {
   text-decoration: none;
   color: white;
+}
+
+#checkMenu:checked ~ #menu {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 /*# sourceMappingURL=style.css.map */
