@@ -25,6 +25,9 @@ export class Slider {
             elmTitre.innerHTML = unSlide.titre
             elmSous.innerHTML = unSlide.sousTitre
             elmImg.src = unSlide.img
+
+
+
             
             // elmSlide.appendChild(elmTitre)
             // elmSlide.appendChild(elmSous)
@@ -41,6 +44,7 @@ export class Slider {
         let elmPrec = document.createElement("p")
         elmPrec.className = "prec"
         elmPrec.innerHTML = "&#10094;"
+        elmPrec.onclick = function(){}
 
 
         let elmProc = document.createElement("p")
@@ -60,6 +64,8 @@ export class Slider {
 
 
     }
+
+
 
 
 }

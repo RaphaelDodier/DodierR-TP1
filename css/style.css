@@ -366,4 +366,28 @@ img {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
+.pointSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 330px;
+}
+
+.pointSlider a {
+  text-decoration: none;
+  color: white;
+  font-size: 75px;
+  margin: 0 10px;
+}
+
+.pointSlider .actif {
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff;
+}
 /*# sourceMappingURL=style.css.map */
