@@ -2,17 +2,23 @@ body{
     background-color: #009900;
 
     .global{
-
+        color: white;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        position: absolute;
+        top: 0;
+        width: 80%;
         h1 {
             font-size: 2.4em;
-            padding: 8rem 0 .1rem 0;
-            margin: 0 0 0 2%;
+            padding: 0 0 .1rem 0;
+            margin: 3rem 0 0 2%;
+            font-weight: bolder;
         }
         
         h2 {
             font-size: 1.2em;
             padding: 0 0 20px 4%;
             margin: 0;
+            font-style: italic;
         }
     }  
 }

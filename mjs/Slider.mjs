@@ -26,8 +26,8 @@ export class Slider {
             elmSous.innerHTML = unSlide.sousTitre
             elmImg.src = unSlide.img
             
-            elmSlide.appendChild(elmTitre)
-            elmSlide.appendChild(elmSous)
+            // elmSlide.appendChild(elmTitre)
+            // elmSlide.appendChild(elmSous)
             elmSlide.appendChild(elmImg)
 
             elmTitre.style.zIndex="1";
