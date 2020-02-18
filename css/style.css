@@ -238,6 +238,24 @@ header ul li a {
   }
 }
 
+footer {
+  background-color: #6b4434;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+footer p {
+  margin: 0 0 20px 0;
+  font-size: 23px;
+  font-style: italic;
+}
+
 .mon-slider {
   display: -webkit-box;
   display: -ms-flexbox;
