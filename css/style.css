@@ -11,6 +11,69 @@
 # Typographie
 # Variables
 */
+.animTitre {
+  -webkit-animation: animTitre 1s ease-out;
+          animation: animTitre 1s ease-out;
+}
+
+@-webkit-keyframes animTitre {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animTitre {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes animSousTitre {
+  0% {
+    background-size: 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-size: 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes animSousTitre {
+  0% {
+    background-size: 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-size: 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+}
+
 html, body {
   height: 100%;
 }
@@ -39,6 +102,14 @@ body .titre h2 {
   padding: 0 0 20px 4%;
   margin: 0;
   font-style: italic;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+  background: linear-gradient(90deg, #fff, #fff);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-animation: animSousTitre 2s linear;
+          animation: animSousTitre 2s linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
 body .conteneurGrid {
