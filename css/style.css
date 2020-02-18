@@ -1,4 +1,6 @@
 /*
+# Variables
+# Anim_Elements
 # Elements
 # Entete
 # Extend
@@ -9,7 +11,6 @@
 # Pied-page
 # Slider
 # Typographie
-# Variables
 */
 .animTitre {
   -webkit-animation: animTitre 1s ease-out;
