@@ -2,14 +2,14 @@ export class Slider {
     constructor(elmMonSlider, config_slider){
         this.elmMonSlider = elmMonSlider;
         this.list_slide = config_slider.list_slide;
-        console.log('slider')
+        // console.log('slider')
 
     }
 
     creerSlider() {
 
-        console.log(this.elmMonSlider.tagName)
-        console.log(this.list_slide)
+        // console.log(this.elmMonSlider.tagName)
+        // console.log(this.list_slide)
         let elmSlider = document.createElement('div')
         elmSlider.classList.add('slider')
         let elmSlides = document.createElement('div')
