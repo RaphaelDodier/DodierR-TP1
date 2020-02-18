@@ -107,6 +107,12 @@ body .conteneurGrid .conteneurImg .carreNoir p {
   body .conteneurGrid * {
     height: 100%;
   }
+  body .conteneurGrid .conteneurImg .carreNoir p {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 2vw;
+  }
 }
 
 header {
