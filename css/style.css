@@ -256,6 +256,15 @@ footer p {
   font-style: italic;
 }
 
+@media screen and (min-width: 500px) {
+  footer {
+    height: 170px;
+  }
+  footer p {
+    font-size: 27px;
+  }
+}
+
 .mon-slider {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -9,3 +9,12 @@ footer{
         font-style: italic;
     }
 }
+
+@media screen and (min-width:500px) {
+    footer{
+        height: 170px;
+        p{
+            font-size: 27px;
+        }
+    }
+}
