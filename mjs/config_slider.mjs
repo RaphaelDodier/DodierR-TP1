@@ -7,17 +7,17 @@ export const config_slider = {
         {
             titre : 'Gazon',
             sousTitre : 'Gazon',
-            img : '../img/gazon.jpg'
+            img : './img/gazon.jpg'
         },
         {
             titre : 'Gazon aussi',
             sousTitre : 'Gazon aussi',
-            img : '../img/gazon2.jpg'
+            img : './img/gazon2.jpg'
         },
         {
             titre : 'Gazon encore',
             sousTitre : 'Gazon encore',
-            img : '../img/gazon3.jpg'
+            img : './img/gazon3.jpg'
         }
         
 
