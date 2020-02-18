@@ -57,8 +57,8 @@ export class Slider {
         elmSlider.appendChild(elmSlides)
 
         //Fait apparaitre les flèches
-        elmSlider.appendChild(elmPrec)
-        elmSlider.appendChild(elmProc)
+        // elmSlider.appendChild(elmPrec)
+        // elmSlider.appendChild(elmProc)
 
         this.elmMonSlider.appendChild(elmSlider)
 

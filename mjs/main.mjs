@@ -11,4 +11,4 @@ mon_slider.creerSlider()
 
 
 
-let slideIndex =1;
+
