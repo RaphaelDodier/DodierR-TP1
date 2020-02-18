@@ -151,7 +151,7 @@ header #menu {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #472c21;
+  background-color: #001500;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   display: -webkit-box;
@@ -171,7 +171,7 @@ header ul {
   width: 100%;
   list-style-type: none;
   padding: 0;
-  background-color: #0ada0a;
+  background-color: #00e100;
 }
 
 header ul li {
@@ -239,7 +239,7 @@ header ul li a {
 }
 
 footer {
-  background-color: #6b4434;
+  background-color: #38231b;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
