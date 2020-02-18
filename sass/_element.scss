@@ -29,19 +29,41 @@ body{
     } 
 
 
-    #conteneurGrid{
+    .conteneurGrid{
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
-        justify-items: stretch;
         grid-gap: 5px 5px;
         width: 98%;
         margin: 5px auto 0 auto;
+
 
         
          *{
          height: 100%;
         }
+
+        .conteneurImg{
+            position: relative;
+
+            img{
+                filter: blur(1px);
+            }
+
+            .carreNoir{
+                position: absolute;
+                width: 100%;
+                top: 0;
+                background-color: rgba(187, 187, 187, 0.4);
+                p{
+                    position: absolute;
+                    top: 40%;
+                    left: 10%;
+                    font-size: 5vw;
+                }
+            }
+        }
+
     }
 }
 
@@ -61,6 +83,22 @@ body{
                     margin :0;
             }
     
+        }
+
+        .conteneurGrid{
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 0px 2px;
+            width: 100%;
+            margin-top:2px;
+             *{
+             height: 100%;
+             
+            }
+
+
+
+
         }
 
     }
